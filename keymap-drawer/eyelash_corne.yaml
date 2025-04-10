@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-control$$
   - LGUI
-  - QWERTY
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -147,3 +147,22 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [14, 15]
+  k: $$mdi:keyboard-tab$$
+- p: [24, 25, 26]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [8, 24, 39]
+  k: {t: \, s: '|'}
+- p: [8, 24, 45]
+  k: '>'
+- p: [8, 22, 47]
+  k: <
+- p: [23, 11]
+  k: '~'
+- p: [9, 23, 25]
+  k: ^
+- p: [7, 23]
+  k: {t: '`', s: '~'}
+- p: [8, 39]
+  k: '%'
