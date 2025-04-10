@@ -259,7 +259,7 @@
                               &mo 3  &kp LEFT_ALT  &kp SPACE                                                                &kp SPACE  &kp BACKSPACE  &kp LCTRL
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         Numbers {
