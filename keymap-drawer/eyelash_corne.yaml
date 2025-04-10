@@ -59,8 +59,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -101,8 +101,8 @@ layers:
   FLayer:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -166,35 +166,63 @@ combos:
   k: {t: '`', s: '~'}
 - p: [8, 39]
   k: '%'
-- p: [9, 9, 10, 8]
-  k: HOME
 - p: [9, 10, 11]
   k: END
 - p: [22, 25]
   k: PgUp
 - p: [36, 39]
   k: PgDn
-- p: [8, 9, 25]
-  k: '!'
 - p: [37, 38, 25]
   k: $
-- p: [7, 8]
-  k: KP EQUAL
 - p: [36, 37]
   k: _
 - p: [22, 23]
   k: KP MINUS
-- p: [22, 23, 24]
-  k: KP PLUS
-- p: [8, 46]
-  k: {t: '[', s: '{'}
-- p: [9, 46]
-  k: {t: ']', s: '}'}
-- p: [23, 46]
-  k: (
-- p: [24, 46]
-  k: )
 - p: [37, 46]
   k: '{'
 - p: [38, 46]
   k: '}'
+- p: [8, 9, 25]
+  k: '!'
+- p: [8, 9, 10]
+  k: HOME
+- p: [22, 23, 24]
+  k: +
+- p: [7, 8]
+  k: KP EQUAL
+- p: [23, 46]
+  k: (
+- p: [24, 46]
+  k: )
+- p: [23, 45]
+  k: (
+- p: [24, 45]
+  k: )
+- p: [46, 8]
+  k: {t: '[', s: '{'}
+- p: [46, 9]
+  k: {t: ']', s: '}'}
+- p: [8, 24, 25]
+  k: '@'
+- p: [22, 24]
+  k: '&'
+- p: [7, 8, 9]
+  k: '#'
+- p: [36, 37, 38]
+  k: '*'
+- p: [23, 26]
+  k: $$mdi:pan-up$$
+- p: [37, 40]
+  k: $$mdi:pan-down$$
+- p: [17, 16]
+  k: '&mkp MB1'
+- p: [17, 15]
+  k: '&mkp MB2'
+- p: [17, 16, 15]
+  k: '&mkp MB3'
+- p: [10, 9]
+  k: Numbers
+- p: [2, 3]
+  k: FLayer
+- p: [41, 27]
+  k: MUTE
