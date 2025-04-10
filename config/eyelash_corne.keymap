@@ -245,6 +245,11 @@
             bindings = <&kp K_MUTE>;
             key-positions = <41 27>;
         };
+
+        apostrophe {
+            bindings = <&kp APOS>;
+            key-positions = <9 25>;
+        };
     };
 
     keymap {
