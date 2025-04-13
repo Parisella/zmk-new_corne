@@ -258,10 +258,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp DELETE      &kp Q  &kp W  &kp E  &kp R         &kp T                                   &mmv MOVE_UP                     &kp Y      &kp U          &kp I      &kp O    &kp P     &kp ESCAPE
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F         &kp G                   &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp RIGHT_SHIFT
-&kp LEFT_GUI    &kp Z  &kp X  &kp C  &kp V         &kp B      &kp SPACE                    &mmv MOVE_DOWN                   &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_GUI
-                              &mo 3  &kp LEFT_ALT  &kp SPACE                                                                &kp SPACE  &kp BACKSPACE  &kp LCTRL
+&kp DELETE      &kp Q  &kp W  &kp E         &kp R         &kp T                                   &mmv MOVE_UP                     &kp Y      &kp U          &kp I      &kp O    &kp P     &kp ESCAPE
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F         &kp G                   &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp RIGHT_SHIFT
+&mo 3           &kp Z  &kp X  &kp C         &kp V         &kp B      &kp SPACE                    &mmv MOVE_DOWN                   &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_GUI
+                              &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE                                                                &kp SPACE  &kp BACKSPACE  &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -291,6 +291,15 @@
 &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans            &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans                &trans                 &trans  &trans  &trans            &trans          &trans  &trans    &trans    &kp END    &trans  &trans
                                       &trans                 &trans  &trans                                    &trans  &trans    &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LALT  &kp ENTER            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp Z   &kp Y   &kp X     &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &mo 1     &trans                                       &trans  &trans  &trans
             >;
         };
     };
