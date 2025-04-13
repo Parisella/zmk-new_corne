@@ -287,10 +287,10 @@
 
         Nav {
             bindings = <
-&trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans                    &trans          &trans  &trans    &kp UP    &kp HOME   &trans  &trans
-&trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans            &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans                &trans                 &trans  &trans  &trans            &trans          &trans  &trans    &trans    &kp END    &trans  &trans
-                                      &trans                 &trans  &trans                                    &trans  &trans    &trans
+&trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans                    &trans          &trans  &msc SCRL_UP    &kp UP    &kp HOME   &trans  &trans
+&trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans            &trans  &trans  &trans  &trans  &kp LEFT        &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans                &trans                 &trans  &trans  &trans            &trans          &trans  &msc SCRL_DOWN  &trans    &kp END    &trans  &trans
+                                      &trans                 &trans  &trans                                    &trans  &trans          &trans
             >;
         };
 
@@ -299,7 +299,7 @@
 &trans  &trans    &trans    &trans    &trans    &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &mkp MB2  &mkp MB3  &mkp MB1  &kp LALT  &kp ENTER            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &kp Z     &kp Y     &kp X     &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans    &mo 1     &trans                                       &trans  &trans  &trans
+                            &trans    &mo 1     &trans                                       &tog 0  &trans  &trans
             >;
         };
     };
