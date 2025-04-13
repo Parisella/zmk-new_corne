@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '4':
+  Create:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -322,7 +322,7 @@ combos:
   k: Numbers
 - p: [2, 3]
   k: FLayer
-- p: [41, 27]
-  k: MUTE
-- p: [9, 25]
-  k: .
+- p: [13, 18]
+  k: {t: Create, h: toggle}
+- p: [0, 5]
+  k: {t: QWERTY, h: toggle}
