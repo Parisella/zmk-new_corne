@@ -241,14 +241,14 @@
             key-positions = <2 3>;
         };
 
-        Mute {
-            bindings = <&kp K_MUTE>;
-            key-positions = <41 27>;
+        Toggle4 {
+            bindings = <&to 4>;
+            key-positions = <13 18>;
         };
 
-        apostrophe {
-            bindings = <&kp APOS>;
-            key-positions = <9 25>;
+        ToggleDefault {
+            bindings = <&tog 0>;
+            key-positions = <0 5>;
         };
     };
 
@@ -294,7 +294,7 @@
             >;
         };
 
-        layer_4 {
+        Create {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &kp LALT  &kp ENTER            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
