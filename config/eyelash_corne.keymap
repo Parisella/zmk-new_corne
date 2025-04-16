@@ -66,24 +66,9 @@
             key-positions = <8 24 39>;
         };
 
-        Greater {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <8 24 46>;
-        };
-
-        LessThan {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <47 9 23>;
-        };
-
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <23 11>;
-        };
-
-        Caret {
-            bindings = <&kp CARET>;
-            key-positions = <9 23 25>;
         };
 
         Tick {
@@ -91,24 +76,9 @@
             key-positions = <7 23>;
         };
 
-        Percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <8 39>;
-        };
-
         End {
             bindings = <&kp END>;
             key-positions = <9 10 11>;
-        };
-
-        PageUp {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <22 25>;
-        };
-
-        PageDown {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <36 39>;
         };
 
         DollarSign {
@@ -144,11 +114,6 @@
         Home {
             bindings = <&kp HOME>;
             key-positions = <8 9 10>;
-        };
-
-        Plus {
-            bindings = <&kp PLUS>;
-            key-positions = <22 23 24>;
         };
 
         Equals {
