@@ -296,3 +296,7 @@ combos:
   k: {t: Create, h: toggle}
 - p: [0, 5]
   k: {t: QWERTY, h: toggle}
+- p: [4, 1]
+  k: $$mdi:pan-up$$
+- p: [32, 29]
+  k: $$mdi:pan-down$$
