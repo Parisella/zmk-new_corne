@@ -175,6 +175,16 @@
             bindings = <&tog 0>;
             key-positions = <0 5>;
         };
+
+        ScrollUp_L {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <4 1>;
+        };
+
+        ScrollDown_L {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <32 29>;
+        };
     };
 
     keymap {
