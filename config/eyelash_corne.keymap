@@ -116,46 +116,6 @@
             key-positions = <8 9 10>;
         };
 
-        Equals {
-            bindings = <&kp KP_EQUAL>;
-            key-positions = <7 8>;
-        };
-
-        Parenthesis_L {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <23 46>;
-        };
-
-        Parenthesis_R {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <24 46>;
-        };
-
-        Parenthesis_L_2 {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <23 45>;
-        };
-
-        Parenthesis_R_2 {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <24 45>;
-        };
-
-        Bracket_L {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <46 8>;
-        };
-
-        Bracket_R {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <46 9>;
-        };
-
-        At {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <8 24 25>;
-        };
-
         Ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <22 24>;
