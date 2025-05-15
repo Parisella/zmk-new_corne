@@ -226,10 +226,10 @@
 
         Create {
             bindings = <
-&trans  &trans    &trans    &trans    &trans    &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mkp MB2  &mkp MB3  &mkp MB1  &kp LALT  &kp ENTER            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &kp Z     &kp Y     &kp X     &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans    &to 1     &trans                                       &tog 0  &to 0   &trans
+&kp X  &trans          &trans     &kp E      &kp W       &kp G                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp Y  &kp LEFT_SHIFT  &mkp RCLK  &mkp MCLK  &mkp LCLK   &kp F                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp Z  &trans          &trans     &kp COMMA  &kp PERIOD  &kp S      &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans     &to 1       &kp ENTER                                    &tog 0  &to 0   &trans
             >;
         };
     };
