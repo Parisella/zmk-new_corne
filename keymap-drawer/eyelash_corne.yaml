@@ -211,10 +211,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Y
-  - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
+  - '&mkp MB3'
   - $$mdi:mouse-left-click-outline$$
+  - $$mdi:apple-keyboard-option$$
   - F
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
