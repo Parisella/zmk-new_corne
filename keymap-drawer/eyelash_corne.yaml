@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-command$$
+  - Nav
   - $$mdi:apple-keyboard-control$$
   - Numbers
   - $$mdi:apple-keyboard-option$$
@@ -189,7 +189,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - END
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -298,3 +298,5 @@ combos:
   k: $$mdi:pan-up$$
 - p: [32, 29]
   k: $$mdi:pan-down$$
+- p: [12, 11]
+  k: LEFT WIN
