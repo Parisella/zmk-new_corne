@@ -131,16 +131,6 @@
             key-positions = <36 37 38>;
         };
 
-        ScrollUp {
-            bindings = <&msc SCRL_UP>;
-            key-positions = <23 26>;
-        };
-
-        ScrollDown {
-            bindings = <&msc SCRL_DOWN>;
-            key-positions = <37 40>;
-        };
-
         LeftClick {
             bindings = <&mkp MB1>;
             key-positions = <17 16>;
