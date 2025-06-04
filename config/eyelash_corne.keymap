@@ -197,7 +197,7 @@
 &trans  &trans  &kp N7  &kp N8  &kp N9  &kp KP_PLUS                     &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N0  &kp N4  &kp N5  &kp N6  &kp KP_MINUS            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &tog 0  &trans  &kp N1  &kp N2  &kp N3  &kp EQUAL     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &mo 4   &trans                                          &trans  &trans  &trans
+                        &trans  &tog 4  &trans                                          &trans  &trans  &trans
             >;
         };
 
@@ -224,7 +224,7 @@
 &kp X  &kp DELETE  &trans    &kp E      &kp W         &kp G                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &kp Y  &mkp RCLK   &mkp MB3  &mkp LCLK  &kp LEFT_ALT  &kp F                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp Z  &trans      &trans    &kp COMMA  &kp PERIOD    &kp S      &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans     &mo 1         &kp ENTER                                    &tog 0  &to 0   &trans
+                             &trans     &tog 1        &kp ENTER                                    &tog 0  &to 0   &trans
             >;
         };
     };
