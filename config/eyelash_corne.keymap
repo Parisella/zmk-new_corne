@@ -171,9 +171,9 @@
             key-positions = <32 29>;
         };
 
-        win {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <12 11>;
+        togDefault {
+            bindings = <&tog 0>;
+            key-positions = <28 33>;
         };
     };
 
@@ -221,10 +221,21 @@
 
         Create {
             bindings = <
-&kp X  &kp DELETE  &trans    &kp E      &kp W         &kp G                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp X  &kp DELETE  &kp Q     &kp E      &kp W         &kp G                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &kp Y  &mkp RCLK   &mkp MB3  &mkp LCLK  &kp LEFT_ALT  &kp F                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp Z  &trans      &trans    &kp COMMA  &kp PERIOD    &kp S      &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans     &tog 1        &kp ENTER                                    &tog 0  &to 0   &trans
+                             &trans     &tog 1        &kp ENTER                                    &trans  &to 0   &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
+        };
+
+        Create2 {
+            bindings = <
+&trans     &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
     };
