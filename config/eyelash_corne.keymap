@@ -221,10 +221,10 @@
 
         Create {
             bindings = <
-&kp X  &kp DELETE      &kp Q   &kp E      &kp W       &kp G                     &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&kp Y  &kp LEFT_SHIFT  &trans  &kp COMMA  &kp PERIOD  &kp F             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp Z  &trans          &trans  &kp COMMA  &kp PERIOD  &kp S   &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans     &trans      &trans                                    &trans  &to 0   &trans
+&kp X  &kp DELETE      &kp Q      &kp E       &kp W   &kp G                     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp Y  &kp LEFT_SHIFT  &kp COMMA  &kp PERIOD  &kp F   &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp Z  &trans          &trans     &trans      &trans  &kp S   &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans      &trans  &trans                                    &trans  &to 0   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
