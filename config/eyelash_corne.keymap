@@ -229,14 +229,5 @@
 
             sensor-bindings = <&inc_dec_kp 0 0>;
         };
-
-        Create2 {
-            bindings = <
-&trans     &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
-        };
     };
 };
