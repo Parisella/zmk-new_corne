@@ -175,6 +175,36 @@
             bindings = <&tog 0>;
             key-positions = <28 33>;
         };
+
+        leftParenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <23 46>;
+        };
+
+        rightParenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <46 24>;
+        };
+
+        leftBracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <8 46>;
+        };
+
+        rightBracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <46 9>;
+        };
+
+        rightCurly {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <46 37>;
+        };
+
+        leftBrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <37 46>;
+        };
     };
 
     keymap {
