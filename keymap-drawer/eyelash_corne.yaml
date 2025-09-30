@@ -3,8 +3,8 @@ layers:
   QWERTY:
   - $$mdi:keyboard-esc$$
   - Q
-  - {t: W, type: held}
-  - {t: E, type: held}
+  - W
+  - E
   - R
   - T
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-command$$
   - Z
   - X
   - C
@@ -99,30 +99,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [24, 23]
-  k: $$mdi:keyboard-tab$$
-- p: [24, 25, 26]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [8, 24, 39]
-  k: {t: \, s: '|'}
-- p: [23, 11]
-  k: '~'
-- p: [7, 23]
-  k: {t: '`', s: '~'}
-- p: [9, 10, 11]
-  k: END
-- p: [37, 38, 25]
-  k: $
-- p: [36, 37]
-  k: _
-- p: [22, 23]
-  k: KP MINUS
-- p: [37, 46]
-  k: '{'
-- p: [38, 46]
-  k: '}'
-- p: [8, 9, 25]
-  k: '!'
 - p: [8, 9, 10]
   k: HOME
 - p: [22, 24]
@@ -131,24 +107,10 @@ combos:
   k: '#'
 - p: [36, 37, 38]
   k: '*'
-- p: [17, 16]
-  k: '&mkp MB1'
-- p: [17, 15]
-  k: '&mkp MB2'
-- p: [17, 16, 15]
-  k: '&mkp MB3'
-- p: [2, 3]
-  k: QWERTY
-- p: [13, 18]
-  k: {t: QWERTY, h: toggle}
-- p: [0, 5]
-  k: {t: QWERTY, h: toggle}
-- p: [4, 1]
+- p: [17, 14]
   k: $$mdi:pan-up$$
 - p: [32, 29]
   k: $$mdi:pan-down$$
-- p: [28, 33]
-  k: {t: QWERTY, h: toggle}
 - p: [23, 46]
   k: (
 - p: [46, 24]
@@ -161,3 +123,7 @@ combos:
   k: '}'
 - p: [37, 46]
   k: '{'
+- p: [16, 15, 17]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [5, 4]
+  k: F1
