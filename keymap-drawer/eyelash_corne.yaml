@@ -51,7 +51,6 @@ layers:
   - $$mdi:apple-keyboard-control$$
   Numbers:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -64,10 +63,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '0', s: )}
-  - {t: '4', s: $}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '4'
   - {t: '5', s: '%'}
-  - {t: '6', s: ^}
+  - '6'
   - KP MINUS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -78,12 +77,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: QWERTY, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
+  - {t: QWERTY, h: toggle}
+  - '1'
+  - '2'
+  - '3'
   - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -127,3 +127,5 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [5, 4]
   k: F1
+- p: [16, 17]
+  k: $$mdi:keyboard-tab$$
