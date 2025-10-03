@@ -30,7 +30,9 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings = <&kp T>, <&kp F1>;
+
+            tapping-term-ms = <2>;
         };
     };
 
@@ -120,6 +122,11 @@
             bindings = <&kp F1>;
             key-positions = <5 4>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {
@@ -148,10 +155,10 @@
 
         Numbers {
             bindings = <
-&trans  &trans  &kp N7  &kp N8  &kp N9  &kp KP_PLUS                     &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0  &kp N4  &kp N5  &kp N6  &kp KP_MINUS            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&tog 0  &trans  &kp N1  &kp N2  &kp N3  &kp EQUAL     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &tog 0  &trans                                          &trans  &trans  &trans
+&trans  &kp N7        &kp N8        &kp N9        &kp KP_PLUS   &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&tog 0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &tog 0        &trans                                    &trans  &trans  &trans
             >;
         };
     };
