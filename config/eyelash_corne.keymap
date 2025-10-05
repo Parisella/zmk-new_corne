@@ -138,7 +138,7 @@
             key-positions = <3 2>;
         };
 
-        f3 {
+        f4 {
             bindings = <&kp F4>;
             key-positions = <2 1>;
         };
