@@ -73,16 +73,6 @@
             key-positions = <36 37 38>;
         };
 
-        ScrollUp_L {
-            bindings = <&msc SCRL_UP>;
-            key-positions = <17 14>;
-        };
-
-        ScrollDown_L {
-            bindings = <&msc SCRL_DOWN>;
-            key-positions = <32 29>;
-        };
-
         leftParenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <23 46>;
