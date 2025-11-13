@@ -164,7 +164,7 @@ combos:
   k: {t: '[', s: '{'}
 - p: [46, 9]
   k: {t: ']', s: '}'}
-- p: [46, 37]
+- p: [46, 38]
   k: '}'
 - p: [37, 46]
   k: '{'
@@ -198,3 +198,5 @@ combos:
   k: {t: Numbers, h: toggle}
 - p: [17, 15]
   k: $$mdi:keyboard-tab$$
+- p: [24, 25]
+  k: $$mdi:apple-keyboard-command$$
