@@ -95,7 +95,7 @@
 
         rightCurly {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <46 37>;
+            key-positions = <46 38>;
         };
 
         leftBrace {
@@ -176,6 +176,11 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <17 15>;
+        };
+
+        windows {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <24 25>;
         };
     };
 
