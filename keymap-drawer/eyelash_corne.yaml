@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:mouse-left-click-outline$$
+  - MUTE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - N
   - M
@@ -148,9 +148,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [23, 24]
+- p: [23, 24, 25]
   k: HOME
-- p: [37, 38]
+- p: [37, 38, 39]
   k: END
 - p: [7, 8, 9]
   k: '#'
@@ -202,3 +202,5 @@ combos:
   k: $$mdi:apple-keyboard-command$$
 - p: [23, 9]
   k: .
+- p: [23, 24]
+  k: {t: '-', s: _}
