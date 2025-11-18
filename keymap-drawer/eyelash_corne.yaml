@@ -6,7 +6,7 @@ layers:
   - W
   - E
   - R
-  - T
+  - {t: T, h: P}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Y
   - U
