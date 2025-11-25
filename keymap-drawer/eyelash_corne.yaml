@@ -112,7 +112,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWERTY, h: toggle}
   - F8
   - F7
   - F6
@@ -180,3 +180,5 @@ combos:
   k: {t: \, s: '|'}
 - p: [17, 16]
   k: {t: '2', h: toggle}
+- p: [24, 25]
+  k: $$mdi:apple-keyboard-command$$
