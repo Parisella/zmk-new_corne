@@ -100,10 +100,10 @@ layers:
   - {type: held alternate}
   '2':
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '#'
-  - '@'
-  - '!'
+  - F4
+  - F3
+  - F2
+  - F1
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -113,10 +113,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - ^
-  - '%'
-  - $
+  - F8
+  - F7
+  - F6
+  - F5
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -128,10 +128,10 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F12
+  - F11
+  - F10
+  - F9
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -170,36 +170,8 @@ combos:
   k: '{'
 - p: [16, 15, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [5, 4]
-  k: F1
 - p: [4, 3]
   k: F2
-- p: [3, 2]
-  k: F3
-- p: [2, 1]
-  k: F4
-- p: [18, 17]
-  k: F5
-- p: [17, 16]
-  k: F6
-- p: [16, 15]
-  k: F7
-- p: [15, 14]
-  k: F8
-- p: [33, 32]
-  k: F9
-- p: [32, 31]
-  k: F10
-- p: [31, 30]
-  k: F11
-- p: [30, 29]
-  k: F12
-- p: [14, 17]
-  k: {t: Numbers, h: toggle}
-- p: [17, 15]
-  k: $$mdi:keyboard-tab$$
-- p: [24, 25]
-  k: $$mdi:apple-keyboard-command$$
 - p: [23, 9]
   k: .
 - p: [23, 24]
