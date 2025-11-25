@@ -108,79 +108,9 @@
             key-positions = <16 15 17>;
         };
 
-        f1 {
-            bindings = <&kp F1>;
-            key-positions = <5 4>;
-        };
-
         f2 {
             bindings = <&kp F2>;
             key-positions = <4 3>;
-        };
-
-        f3 {
-            bindings = <&kp F3>;
-            key-positions = <3 2>;
-        };
-
-        f4 {
-            bindings = <&kp F4>;
-            key-positions = <2 1>;
-        };
-
-        f5 {
-            bindings = <&kp F5>;
-            key-positions = <18 17>;
-        };
-
-        f6 {
-            bindings = <&kp F6>;
-            key-positions = <17 16>;
-        };
-
-        f7 {
-            bindings = <&kp F7>;
-            key-positions = <16 15>;
-        };
-
-        f8 {
-            bindings = <&kp F8>;
-            key-positions = <15 14>;
-        };
-
-        f9 {
-            bindings = <&kp F9>;
-            key-positions = <33 32>;
-        };
-
-        f10 {
-            bindings = <&kp F10>;
-            key-positions = <32 31>;
-        };
-
-        f11 {
-            bindings = <&kp F11>;
-            key-positions = <31 30>;
-        };
-
-        f12 {
-            bindings = <&kp F12>;
-            key-positions = <30 29>;
-        };
-
-        NumPad_Layer {
-            bindings = <&tog 1>;
-            key-positions = <14 17>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <17 15>;
-        };
-
-        windows {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <24 25>;
         };
 
         quote {
@@ -229,10 +159,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &kp HASH   &kp AT_SIGN  &kp EXCLAMATION  &trans                    &trans          &trans  &trans  &trans          &kp UP_ARROW  &trans     &trans
-&trans  &trans  &kp CARET  &kp PERCENT  &kp DOLLAR       &trans            &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans  &trans     &trans       &trans           &trans  &trans            &trans          &trans  &trans  &trans          &trans        &trans     &trans
-                           &trans       &trans           &trans                                    &trans  &trans  &trans
+&trans  &kp F4   &kp F3   &kp F2   &kp F1  &trans                    &trans          &trans  &trans  &trans          &kp UP_ARROW  &trans     &trans
+&trans  &kp F8   &kp F7   &kp F6   &kp F5  &trans            &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans
+&trans  &kp F12  &kp F11  &kp F10  &kp F9  &trans  &trans            &trans          &trans  &trans  &trans          &trans        &trans     &trans
+                          &trans   &trans  &trans                                    &trans  &trans  &trans
             >;
         };
     };
