@@ -6,7 +6,7 @@ layers:
   - W
   - E
   - R
-  - {t: T, h: P}
+  - T
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Y
   - U
@@ -115,8 +115,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - F8
   - F7
-  - {t: F6, type: held}
-  - {t: F5, type: held}
+  - F6
+  - F5
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -141,7 +141,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWERTY, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -179,4 +179,4 @@ combos:
 - p: [8, 24, 39]
   k: {t: \, s: '|'}
 - p: [17, 16]
-  k: {t: '2', h: '$$mdi:gesture-tap-hold$$'}
+  k: {t: '2', h: toggle}
