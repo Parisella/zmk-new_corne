@@ -115,8 +115,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - F8
   - F7
-  - F6
-  - F5
+  - {t: F6, type: held}
+  - {t: F5, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -170,9 +170,13 @@ combos:
   k: '{'
 - p: [16, 15, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [4, 3]
-  k: F2
 - p: [23, 9]
   k: .
 - p: [23, 24]
   k: {t: '-', s: _}
+- p: [4, 16]
+  k: {t: '`', s: '~'}
+- p: [8, 24, 39]
+  k: {t: \, s: '|'}
+- p: [17, 16]
+  k: {t: '2', h: '$$mdi:gesture-tap-hold$$'}
