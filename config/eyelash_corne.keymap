@@ -108,11 +108,6 @@
             key-positions = <16 15 17>;
         };
 
-        f2 {
-            bindings = <&kp F2>;
-            key-positions = <4 3>;
-        };
-
         quote {
             bindings = <&kp APOS>;
             key-positions = <23 9>;
@@ -121,6 +116,21 @@
         hyphen {
             bindings = <&kp MINUS>;
             key-positions = <23 24>;
+        };
+
+        backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <4 16>;
+        };
+
+        Backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <8 24 39>;
+        };
+
+        LayerF {
+            bindings = <&sl 2>;
+            key-positions = <17 16>;
         };
     };
 
