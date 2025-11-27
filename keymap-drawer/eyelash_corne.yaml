@@ -182,3 +182,7 @@ combos:
   k: {t: '2', h: toggle}
 - p: [24, 25]
   k: $$mdi:apple-keyboard-command$$
+- p: [31, 32]
+  k: $$mdi:keyboard-tab$$
+- p: [38, 37]
+  k: _
