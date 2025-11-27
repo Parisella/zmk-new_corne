@@ -137,6 +137,16 @@
             bindings = <&kp LEFT_GUI>;
             key-positions = <24 25>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <31 32>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <38 37>;
+        };
     };
 
     macros {
