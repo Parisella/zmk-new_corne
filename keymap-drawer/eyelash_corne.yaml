@@ -100,11 +100,11 @@ layers:
   - {type: held alternate}
   '2':
   - {t: '$$mdi:transfer$$', type: trans}
-  - F4
-  - F3
-  - F2
-  - F1
   - {t: '$$mdi:transfer$$', type: trans}
+  - F9
+  - F10
+  - F11
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -113,11 +113,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: QWERTY, h: toggle}
-  - F8
-  - F7
-  - F6
+  - {t: QWERTY, h: toggle}
   - F5
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F6
+  - F7
+  - F8
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -128,11 +128,11 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F12
-  - F11
-  - F10
-  - F9
   - {t: '$$mdi:transfer$$', type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
