@@ -135,7 +135,7 @@
 
         windows {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <24 25>;
+            key-positions = <39 38>;
         };
 
         tab {
