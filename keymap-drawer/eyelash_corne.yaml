@@ -180,7 +180,7 @@ combos:
   k: {t: \, s: '|'}
 - p: [16, 15]
   k: {t: '2', h: toggle}
-- p: [24, 25]
+- p: [39, 38]
   k: $$mdi:apple-keyboard-command$$
 - p: [16, 17]
   k: $$mdi:keyboard-tab$$
