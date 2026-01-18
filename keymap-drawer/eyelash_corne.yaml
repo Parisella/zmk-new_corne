@@ -178,7 +178,7 @@ combos:
   k: {t: '`', s: '~'}
 - p: [8, 24, 39]
   k: {t: \, s: '|'}
-- p: [16, 15]
+- p: [31, 32]
   k: {t: '2', h: toggle}
 - p: [39, 38]
   k: $$mdi:apple-keyboard-command$$
@@ -186,3 +186,5 @@ combos:
   k: $$mdi:keyboard-tab$$
 - p: [38, 37]
   k: _
+- p: [29, 30]
+  k: Y
