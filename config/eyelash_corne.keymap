@@ -130,7 +130,7 @@
 
         LayerF {
             bindings = <&to 2>;
-            key-positions = <16 15>;
+            key-positions = <31 32>;
         };
 
         windows {
@@ -146,6 +146,11 @@
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <38 37>;
+        };
+
+        y_key {
+            bindings = <&kp Y>;
+            key-positions = <29 30>;
         };
     };
 
