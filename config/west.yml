@@ -8,11 +8,11 @@ manifest:
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
   projects:
     - name: eyelash_corne
-      url: https://github.com/a741725193/zmk-new_corne
-      revision: v0.3.0
+      url: https://github.com/<whatever-your-eyelash_corne-url-is>
+      revision: main
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3.0
       import: app/west.yml
   self:
     path: config
