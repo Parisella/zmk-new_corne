@@ -120,7 +120,7 @@
 
         backtick {
             bindings = <&kp GRAVE>;
-            key-positions = <4 16>;
+            key-positions = <22 8>;
         };
 
         Backslash {
@@ -130,7 +130,7 @@
 
         LayerF {
             bindings = <&to 2>;
-            key-positions = <31 32>;
+            key-positions = <3 4>;
         };
 
         windows {
@@ -140,7 +140,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <16 17>;
+            key-positions = <3 4>;
         };
 
         underscore {
@@ -152,14 +152,31 @@
             bindings = <&kp Y>;
             key-positions = <29 30>;
         };
+
+        pan {
+            bindings = <&Pan>;
+            key-positions = <17 43>;
+        };
+
+        Zoom {
+            bindings = <&Zoom>;
+            key-positions = <43 17 16>;
+        };
     };
 
     macros {
-        new_macro: new_macro {
+        Pan: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&mkp MB3 &kp LEFT_ALT>;
             label = "NEW_MACRO";
+        };
+
+        Zoom: Zoom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2 &kp LEFT_ALT>;
+            label = "ZOOM";
         };
     };
 
