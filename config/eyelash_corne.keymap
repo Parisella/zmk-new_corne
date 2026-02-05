@@ -212,14 +212,5 @@
                         &to 0    &trans   &trans                                     &trans  &trans  &trans
             >;
         };
-
-        layer_3 {
-            bindings = <
-&trans     &trans  &trans    &trans     &trans     &kp S                     &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(S)  &trans  &mkp MB2  &mkp MB3   &mkp MB1   &kp F             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans    &kp LS(Z)  &kp LS(C)  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans     &trans     &trans                                    &trans  &trans  &trans
-            >;
-        };
     };
 };
