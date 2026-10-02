@@ -127,20 +127,6 @@
             key-positions = <38 37>;
         };
 
-        y_key {
-            bindings = <&kp Y>;
-            key-positions = <29 30>;
-        };
-
-        pan {
-            bindings = <&Pan>;
-            key-positions = <17 43>;
-        };
-
-        Zoom {
-            bindings = <&Zoom>;
-            key-positions = <43 17 16>;
-        };
     };
 
     macros {
