@@ -182,9 +182,3 @@ combos:
   k: $$mdi:apple-keyboard-command$$
 - p: [38, 37]
   k: _
-- p: [29, 30]
-  k: Y
-- p: [17, 43]
-  k: '&Pan'
-- p: [43, 17, 16]
-  k: '&Zoom'

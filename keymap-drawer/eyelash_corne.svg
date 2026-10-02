@@ -608,22 +608,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
 <text x="756" y="143" class="combo tap">_</text>
 </g>
-<g class="combo combopos-17">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Y</text>
-</g>
-<g class="combo combopos-18">
-<path d="M269,150 l-12,-41" class="combo"/>
-<path d="M269,150 l12,41" class="combo"/>
-<rect rx="6" ry="6" x="255" y="137" width="28" height="26" class="combo"/>
-<text x="269" y="150" class="combo tap">&amp;Pan</text>
-</g>
-<g class="combo combopos-19">
-<path d="M244,128 l32,65" class="combo"/>
-<path d="M244,128 l-35,-31" class="combo"/>
-<rect rx="6" ry="6" x="230" y="115" width="28" height="26" class="combo"/>
-<text x="244" y="128" class="combo tap">&amp;Zoom</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-Numbers">
@@ -974,22 +958,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
 <text x="756" y="143" class="combo tap">_</text>
 </g>
-<g class="combo combopos-17">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Y</text>
-</g>
-<g class="combo combopos-18">
-<path d="M269,150 l-12,-41" class="combo"/>
-<path d="M269,150 l12,41" class="combo"/>
-<rect rx="6" ry="6" x="255" y="137" width="28" height="26" class="combo"/>
-<text x="269" y="150" class="combo tap">&amp;Pan</text>
-</g>
-<g class="combo combopos-19">
-<path d="M244,128 l32,65" class="combo"/>
-<path d="M244,128 l-35,-31" class="combo"/>
-<rect rx="6" ry="6" x="230" y="115" width="28" height="26" class="combo"/>
-<text x="244" y="128" class="combo tap">&amp;Zoom</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 637)" class="layer-2">
@@ -1335,22 +1303,6 @@ rect.held, rect.combo.held {
 <g class="combo combopos-16">
 <rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
 <text x="756" y="143" class="combo tap">_</text>
-</g>
-<g class="combo combopos-17">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Y</text>
-</g>
-<g class="combo combopos-18">
-<path d="M269,150 l-12,-41" class="combo"/>
-<path d="M269,150 l12,41" class="combo"/>
-<rect rx="6" ry="6" x="255" y="137" width="28" height="26" class="combo"/>
-<text x="269" y="150" class="combo tap">&amp;Pan</text>
-</g>
-<g class="combo combopos-19">
-<path d="M244,128 l32,65" class="combo"/>
-<path d="M244,128 l-35,-31" class="combo"/>
-<rect rx="6" ry="6" x="230" y="115" width="28" height="26" class="combo"/>
-<text x="244" y="128" class="combo tap">&amp;Zoom</text>
 </g>
 </g>
 </g>
