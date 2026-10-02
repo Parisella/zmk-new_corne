@@ -351,8 +351,11 @@ combos:
 - p: [14, 15, 16]
   k: Y
   l: [One-handed]
-- p: [14, 15, 16, 17]
+- p: [14, 16]
   k: Z
+  l: [One-handed]
+- p: [33, 32]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [One-handed]
 - p: [29, 30, 31, 32]
   k: $$mdi:keyboard-space$$
