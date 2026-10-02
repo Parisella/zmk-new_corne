@@ -25,17 +25,6 @@
 };
 
 / {
-    behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp T>, <&kp F1>;
-
-            tapping-term-ms = <2>;
-        };
-    };
-
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
@@ -128,19 +117,9 @@
             key-positions = <8 24 39>;
         };
 
-        LayerF {
-            bindings = <&to 2>;
-            key-positions = <3 4>;
-        };
-
         windows {
             bindings = <&kp LEFT_GUI>;
             key-positions = <39 38>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <3 4>;
         };
 
         underscore {
