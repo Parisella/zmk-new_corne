@@ -201,7 +201,7 @@
 
         onehand_n {
             bindings = <&kp N>;
-            key-positions = <29 30>;
+            key-positions = <14 16>;
             layers = <3>;
         };
 
@@ -255,7 +255,7 @@
 
         onehand_z {
             bindings = <&kp Z>;
-            key-positions = <14 16>;
+            key-positions = <18 17>;
             layers = <3>;
         };
 
@@ -267,7 +267,7 @@
 
         onehand_tab {
             bindings = <&kp TAB>;
-            key-positions = <29 30 32>;
+            key-positions = <29 30>;
             layers = <3>;
         };
 
