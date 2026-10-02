@@ -265,6 +265,12 @@
             layers = <3>;
         };
 
+        onehand_tab {
+            bindings = <&kp TAB>;
+            key-positions = <29 30 32>;
+            layers = <3>;
+        };
+
         onehand_space {
             bindings = <&kp SPACE>;
             key-positions = <29 30 31 32>;
