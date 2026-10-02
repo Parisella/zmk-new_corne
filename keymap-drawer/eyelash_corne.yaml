@@ -357,6 +357,9 @@ combos:
 - p: [33, 32]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [One-handed]
+- p: [29, 30, 32]
+  k: $$mdi:keyboard-tab$$
+  l: [One-handed]
 - p: [29, 30, 31, 32]
   k: $$mdi:keyboard-space$$
   l: [One-handed]
