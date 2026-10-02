@@ -45,88 +45,225 @@
         Home {
             bindings = <&kp HOME>;
             key-positions = <23 24 25>;
+            layers = <0 1 2>;
         };
 
         End {
             bindings = <&kp END>;
             key-positions = <37 38 39>;
+            layers = <0 1 2>;
         };
 
         Hashtag {
             bindings = <&kp POUND>;
             key-positions = <7 8 9>;
+            layers = <0 1 2>;
         };
 
         Asterix {
             bindings = <&kp ASTRK>;
             key-positions = <36 37 38>;
+            layers = <0 1 2>;
         };
 
         leftParenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <23 46>;
+            layers = <0 1 2>;
         };
 
         rightParenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <46 24>;
+            layers = <0 1 2>;
         };
 
         leftBracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <8 46>;
+            layers = <0 1 2>;
         };
 
         rightBracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <46 9>;
+            layers = <0 1 2>;
         };
 
         rightCurly {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <46 38>;
+            layers = <0 1 2>;
         };
 
         leftBrace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <37 46>;
+            layers = <0 1 2>;
         };
 
         Enter {
             bindings = <&kp ENTER>;
             key-positions = <16 15 17>;
+            layers = <0 1 2>;
         };
 
         quote {
             bindings = <&kp APOS>;
             key-positions = <23 9>;
+            layers = <0 1 2>;
         };
 
         hyphen {
             bindings = <&kp MINUS>;
             key-positions = <23 24>;
+            layers = <0 1 2>;
         };
 
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <22 8>;
+            layers = <0 1 2>;
         };
 
         Backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <8 24 39>;
+            layers = <0 1 2>;
         };
 
         windows {
             bindings = <&kp LEFT_GUI>;
             key-positions = <39 38>;
+            layers = <0 1 2>;
         };
 
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <38 37>;
+            layers = <0 1 2>;
         };
 
+
+        enter_onehand {
+            bindings = <&to 3>;
+            key-positions = <13 18>;
+            layers = <0>;
+        };
+
+        leave_onehand {
+            bindings = <&to 0>;
+            key-positions = <13 18>;
+            layers = <3>;
+        };
+
+        qwerty_tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
+
+        onehand_dot {
+            bindings = <&kp DOT>;
+            key-positions = <29 32>;
+            layers = <3>;
+        };
+
+        onehand_c {
+            bindings = <&kp C>;
+            key-positions = <31 32>;
+            layers = <3>;
+        };
+
+        onehand_h {
+            bindings = <&kp H>;
+            key-positions = <30 32>;
+            layers = <3>;
+        };
+
+        onehand_j {
+            bindings = <&kp J>;
+            key-positions = <14 15>;
+            layers = <3>;
+        };
+
+        onehand_k {
+            bindings = <&kp K>;
+            key-positions = <29 31>;
+            layers = <3>;
+        };
+
+        onehand_m {
+            bindings = <&kp M>;
+            key-positions = <29 30 31>;
+            layers = <3>;
+        };
+
+        onehand_n {
+            bindings = <&kp N>;
+            key-positions = <29 30>;
+            layers = <3>;
+        };
+
+        onehand_l {
+            bindings = <&kp L>;
+            key-positions = <30 31 32>;
+            layers = <3>;
+        };
+
+        onehand_u {
+            bindings = <&kp U>;
+            key-positions = <30 31>;
+            layers = <3>;
+        };
+
+        onehand_v {
+            bindings = <&kp V>;
+            key-positions = <15 17>;
+            layers = <3>;
+        };
+
+        onehand_p {
+            bindings = <&kp P>;
+            key-positions = <15 16>;
+            layers = <3>;
+        };
+
+        onehand_i {
+            bindings = <&kp I>;
+            key-positions = <16 17>;
+            layers = <3>;
+        };
+
+        onehand_o {
+            bindings = <&kp O>;
+            key-positions = <15 16 17>;
+            layers = <3>;
+        };
+
+        onehand_x {
+            bindings = <&kp X>;
+            key-positions = <14 17>;
+            layers = <3>;
+        };
+
+        onehand_y {
+            bindings = <&kp Y>;
+            key-positions = <14 15 16>;
+            layers = <3>;
+        };
+
+        onehand_z {
+            bindings = <&kp Z>;
+            key-positions = <14 15 16 17>;
+            layers = <3>;
+        };
+
+        onehand_space {
+            bindings = <&kp SPACE>;
+            key-positions = <29 30 31 32>;
+            layers = <3>;
+        };
     };
 
     macros {
@@ -175,6 +312,25 @@
 &to 0   &to 0   &kp F5  &kp F6   &kp F7   &kp F8             &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans
 &trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans            &trans          &trans  &trans  &trans          &trans        &trans     &trans
                         &to 0    &trans   &trans                                     &trans  &trans  &trans
+            >;
+        };
+        onehand {
+            display-name = "One-handed";
+            bindings = <
+                &kp DELETE  &kp BACKSPACE  &mkp MB2  &mkp MB3  &mkp MB1  &kp T  &none  &none  &none  &none  &none  &none  &none
+                &kp G  &kp Q  &kp W  &kp E  &kp R  &kp ESCAPE  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                &kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F  &kp B  &none  &none  &none  &none  &none  &none  &none  &none
+                &mo 4  &kp LEFT_ALT  &kp LCTRL  &none  &none  &none
+            >;
+        };
+
+        onehand_keypad {
+            display-name = "Keypad";
+            bindings = <
+                &kp DELETE  &kp BACKSPACE  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS  &none  &none  &kp LEFT_PARENTHESIS  &kp UP  &kp RIGHT_PARENTHESIS  &none  &none
+                &kp ESCAPE  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS  &none  &none  &none  &kp LEFT_BRACE  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RIGHT_BRACE  &none
+                &kp LEFT_SHIFT  &kp LEFT_GUI  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_EQUAL  &none  &none  &none  &kp LEFT_BRACKET  &none  &kp RIGHT_BRACKET  &none  &none
+                &mo 4  &kp LEFT_ALT  &kp LCTRL  &none  &none  &none
             >;
         };
     };

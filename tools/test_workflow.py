@@ -105,7 +105,7 @@ class WorkflowTests(unittest.TestCase):
 
     def test_duplicate_combo_on_same_layer_is_rejected(self):
         source = Path(__file__).resolve().parents[1] / 'config/eyelash_corne.keymap'
-        text = source.read_text().replace('        Home {', '        duplicate { bindings = <&kp HOME>; key-positions = <23 24 25>; };\n        Home {')
+        text = source.read_text().replace('        Home {', '        duplicate { bindings = <&kp HOME>; key-positions = <23 24 25>; layers = <0>; };\n        Home {')
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / 'bad.keymap'
             path.write_text(text)
