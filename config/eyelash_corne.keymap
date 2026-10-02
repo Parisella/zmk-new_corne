@@ -255,7 +255,13 @@
 
         onehand_z {
             bindings = <&kp Z>;
-            key-positions = <14 15 16 17>;
+            key-positions = <14 16>;
+            layers = <3>;
+        };
+
+        onehand_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <33 32>;
             layers = <3>;
         };
 
