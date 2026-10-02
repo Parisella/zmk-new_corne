@@ -324,7 +324,7 @@ combos:
 - p: [29, 30, 31]
   k: M
   l: [One-handed]
-- p: [29, 30]
+- p: [14, 16]
   k: N
   l: [One-handed]
 - p: [30, 31, 32]
@@ -351,13 +351,13 @@ combos:
 - p: [14, 15, 16]
   k: Y
   l: [One-handed]
-- p: [14, 16]
+- p: [18, 17]
   k: Z
   l: [One-handed]
 - p: [33, 32]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [One-handed]
-- p: [29, 30, 32]
+- p: [29, 30]
   k: $$mdi:keyboard-tab$$
   l: [One-handed]
 - p: [29, 30, 31, 32]
