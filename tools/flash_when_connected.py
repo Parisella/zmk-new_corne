@@ -116,13 +116,28 @@ def main():
             print('Verified bootloader. Transferring firmware once...', flush=True)
             try:
                 with (Path(drive) / 'firmware.uf2').open('wb') as output:
-                    output.write(data)
+                    record['bytes_written'] = output.write(data)
+                    record['phase'] = 'flush'
                     output.flush()
+                    record['phase'] = 'sync'
                     os.fsync(output.fileno())
+                    record['phase'] = 'close'
             except OSError as error:
+                # UF2 bootloaders may reboot as soon as the flushed image arrives.
+                # Only accept a post-flush sync failure if all bytes were written
+                # and the identified bootloader has actually disconnected.
+                if (record.get('phase') == 'sync' and record.get('bytes_written') == len(data)
+                        and error.errno in (9, 22) and drive not in bootloaders()):
+                    record['status'] = 'transfer-complete-bootloader-disconnected'
+                    record['sync_note'] = str(error)
+                    log_path.write_text(json.dumps(record, indent=2))
+                    print('Full image written and flushed; bootloader disconnected before final sync. Verify key behavior after reboot. Log: ' + str(log_path), flush=True)
+                    return
                 record['status'] = 'transfer-uncertain'
+                record['error'] = str(error)
+                record['errno'] = error.errno
                 log_path.write_text(json.dumps(record, indent=2))
-                raise RuntimeError('Drive disappeared or write failed during transfer. Inspect keyboard before retrying; no automatic retry.') from error
+                raise RuntimeError(f"Transfer uncertain during {record.get('phase', 'write')}: {error}. Inspect keyboard before retrying; no automatic retry.") from error
             record['status'] = 'transfer-complete'
             reboot_deadline = time.monotonic() + 10
             while time.monotonic() < reboot_deadline:

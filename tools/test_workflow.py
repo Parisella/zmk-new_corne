@@ -75,6 +75,20 @@ class WorkflowTests(unittest.TestCase):
                 flash.main()
             self.assertFalse((device / 'firmware.uf2').exists())
 
+    def test_reboot_after_flush_is_not_a_failed_transfer(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manifest = self.make_manifest(root)
+            device = root / 'device'
+            device.mkdir()
+            scans = [{}, {str(device): {'Board-ID': 'test-nrf52840', 'Model': 'nRF52840'}}, {}]
+            args = ['flash', '--manifest', str(manifest), '--half', 'left', '--board-id', 'test-nrf52840']
+            with patch.object(sys, 'argv', args), patch.object(flash, 'bootloaders', side_effect=scans), patch.object(flash.os, 'fsync', side_effect=OSError(9, 'Bad file descriptor')), contextlib.redirect_stdout(io.StringIO()):
+                flash.main()
+            log = json.loads(next(root.glob('flash-left-*.json')).read_text())
+            self.assertEqual(log['status'], 'transfer-complete-bootloader-disconnected')
+            self.assertEqual((device / 'firmware.uf2').read_bytes(), uf2())
+
     def test_first_connection_enrolls_and_flashes_without_replugging(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
