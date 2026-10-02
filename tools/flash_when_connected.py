@@ -72,6 +72,7 @@ def main():
     parser.add_argument('--half', choices=['left', 'right'])
     parser.add_argument('--variant', choices=['standard', 'studio'], default='standard')
     parser.add_argument('--board-id', help='Exact Board-ID enrolled from INFO_UF2.TXT')
+    parser.add_argument('--enroll', action='store_true', help='Enroll the single newly connected nRF52840 half and flash on the same connection')
     parser.add_argument('--timeout', type=int, default=180)
     parser.add_argument('--dry-run', action='store_true', help='Validate firmware only; never wait or write')
     args = parser.parse_args()
@@ -84,8 +85,8 @@ def main():
     if args.dry_run:
         print(f"Validated {item['name']} from {manifest['commit']}; no device writes.")
         return
-    if not args.board_id:
-        parser.error('Enroll and provide the exact --board-id before arming automatic flashing')
+    if bool(args.board_id) == bool(args.enroll):
+        parser.error('Provide either --board-id for an enrolled board or --enroll for first connection')
     if args.timeout < 1 or args.timeout > 600:
         parser.error('--timeout must be between 1 and 600 seconds')
     before = bootloaders()
@@ -97,10 +98,17 @@ def main():
         if len(newcomers) > 1:
             raise RuntimeError('Multiple new bootloaders detected; disconnect extras and re-arm.')
         for drive, fields in newcomers.items():
-            if fields['Board-ID'] != args.board_id:
+            if args.board_id and fields['Board-ID'] != args.board_id:
                 raise RuntimeError(f"Unexpected bootloader Board-ID {fields['Board-ID']!r}; nothing flashed.")
             if 'nrf52840' not in json.dumps(fields).lower():
                 raise RuntimeError('Bootloader does not identify an nRF52840; nothing flashed.')
+            if args.enroll:
+                device_path = Path(__file__).resolve().parents[1] / '.corne-build/device.json'
+                devices = json.loads(device_path.read_text()) if device_path.exists() else {}
+                devices[args.half] = {'board_id': fields['Board-ID'], 'variant': args.variant, 'bootloader': fields}
+                device_path.parent.mkdir(exist_ok=True)
+                device_path.write_text(json.dumps(devices, indent=2))
+                print('Enrolled the user-selected half: ' + fields['Board-ID'], flush=True)
             log_path = args.manifest.resolve().parent / f'flash-{args.half}-{time.time_ns()}.json'
             record = {'half': args.half, 'firmware': item, 'commit': manifest['commit'], 'drive': drive,
                       'bootloader': fields, 'status': 'writing'}

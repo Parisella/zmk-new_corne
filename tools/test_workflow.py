@@ -75,6 +75,20 @@ class WorkflowTests(unittest.TestCase):
                 flash.main()
             self.assertFalse((device / 'firmware.uf2').exists())
 
+    def test_first_connection_enrolls_and_flashes_without_replugging(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manifest = self.make_manifest(root)
+            device = root / 'device'
+            device.mkdir()
+            scans = [{}, {str(device): {'Board-ID': 'test-nrf52840', 'Model': 'nRF52840'}}, {}]
+            args = ['flash', '--manifest', str(manifest), '--half', 'left', '--enroll']
+            with patch.object(sys, 'argv', args), patch.object(flash, '__file__', str(root / 'tools' / 'flash.py')), patch.object(flash, 'bootloaders', side_effect=scans), contextlib.redirect_stdout(io.StringIO()):
+                flash.main()
+            enrolled = json.loads((root / '.corne-build/device.json').read_text())
+            self.assertEqual(enrolled['left']['board_id'], 'test-nrf52840')
+            self.assertEqual((device / 'firmware.uf2').read_bytes(), uf2())
+
     def test_duplicate_combo_on_same_layer_is_rejected(self):
         source = Path(__file__).resolve().parents[1] / 'config/eyelash_corne.keymap'
         text = source.read_text().replace('        Home {', '        duplicate { bindings = <&kp HOME>; key-positions = <23 24 25>; };\n        Home {')
