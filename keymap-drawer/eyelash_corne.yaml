@@ -147,48 +147,219 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  One-handed:
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - '&mkp MB2'
+  - '&mkp MB3'
+  - '&mkp MB1'
+  - T
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - E
+  - R
+  - G
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - B
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Keypad
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  Keypad:
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP PLUS
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - (
+  - $$mdi:arrow-up-bold$$
+  - )
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-esc$$
+  - KP 0
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP MINUS
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '{'
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - '}'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-command$$
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP EQUAL
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '[', s: '{'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ']', s: '}'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Keypad, type: held}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [23, 24, 25]
   k: HOME
+  l: [QWERTY, Numbers, '2']
 - p: [37, 38, 39]
   k: END
+  l: [QWERTY, Numbers, '2']
 - p: [7, 8, 9]
   k: '#'
+  l: [QWERTY, Numbers, '2']
 - p: [36, 37, 38]
   k: '*'
+  l: [QWERTY, Numbers, '2']
 - p: [23, 46]
   k: (
+  l: [QWERTY, Numbers, '2']
 - p: [46, 24]
   k: )
+  l: [QWERTY, Numbers, '2']
 - p: [8, 46]
   k: {t: '[', s: '{'}
+  l: [QWERTY, Numbers, '2']
 - p: [46, 9]
   k: {t: ']', s: '}'}
+  l: [QWERTY, Numbers, '2']
 - p: [46, 38]
   k: '}'
+  l: [QWERTY, Numbers, '2']
 - p: [37, 46]
   k: '{'
+  l: [QWERTY, Numbers, '2']
 - p: [16, 15, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY, Numbers, '2']
 - p: [23, 9]
   k: .
+  l: [QWERTY, Numbers, '2']
 - p: [23, 24]
   k: {t: '-', s: _}
+  l: [QWERTY, Numbers, '2']
 - p: [22, 8]
   k: {t: '`', s: '~'}
+  l: [QWERTY, Numbers, '2']
 - p: [8, 24, 39]
   k: {t: \, s: '|'}
-- p: [3, 4]
-  k: {t: '2', h: toggle}
-- p: [39, 38]
+  l: [QWERTY, Numbers, '2']
+- p: [24, 25]
   k: $$mdi:apple-keyboard-command$$
-- p: [3, 4]
-  k: $$mdi:keyboard-tab$$
+  l: [QWERTY, Numbers, '2']
 - p: [38, 37]
   k: _
-- p: [29, 30]
+  l: [QWERTY, Numbers, '2']
+- p: [13, 18]
+  k: {t: One-handed, h: toggle}
+  l: [QWERTY]
+- p: [13, 18]
+  k: {t: QWERTY, h: toggle}
+  l: [One-handed]
+- p: [16, 17]
+  k: $$mdi:keyboard-tab$$
+  l: [QWERTY]
+- p: [29, 32]
+  k: {t: ., s: '>'}
+  l: [One-handed]
+- p: [31, 32]
+  k: C
+  l: [One-handed]
+- p: [30, 32]
+  k: H
+  l: [One-handed]
+- p: [14, 15]
+  k: J
+  l: [One-handed]
+- p: [29, 31]
+  k: K
+  l: [One-handed]
+- p: [29, 30, 31]
+  k: M
+  l: [One-handed]
+- p: [14, 16]
+  k: N
+  l: [One-handed]
+- p: [30, 31, 32]
+  k: L
+  l: [One-handed]
+- p: [30, 31]
+  k: U
+  l: [One-handed]
+- p: [15, 17]
+  k: V
+  l: [One-handed]
+- p: [15, 16]
+  k: P
+  l: [One-handed]
+- p: [16, 17]
+  k: I
+  l: [One-handed]
+- p: [15, 16, 17]
+  k: O
+  l: [One-handed]
+- p: [14, 17]
+  k: X
+  l: [One-handed]
+- p: [14, 15, 16]
   k: Y
-- p: [17, 43]
-  k: '&Pan'
-- p: [43, 17, 16]
-  k: '&Zoom'
+  l: [One-handed]
+- p: [18, 17]
+  k: Z
+  l: [One-handed]
+- p: [33, 32]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [One-handed]
+- p: [29, 30]
+  k: $$mdi:keyboard-tab$$
+  l: [One-handed]
+- p: [29, 30, 31, 32]
+  k: $$mdi:keyboard-space$$
+  l: [One-handed]
