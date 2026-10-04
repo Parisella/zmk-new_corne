@@ -291,7 +291,7 @@ combos:
 - p: [8, 24, 39]
   k: {t: \, s: '|'}
   l: [QWERTY, Numbers, '2']
-- p: [39, 38]
+- p: [24, 25]
   k: $$mdi:apple-keyboard-command$$
   l: [QWERTY, Numbers, '2']
 - p: [38, 37]
@@ -303,7 +303,7 @@ combos:
 - p: [13, 18]
   k: {t: QWERTY, h: toggle}
   l: [One-handed]
-- p: [15, 16]
+- p: [16, 17]
   k: $$mdi:keyboard-tab$$
   l: [QWERTY]
 - p: [29, 32]
